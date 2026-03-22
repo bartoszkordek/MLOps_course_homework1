@@ -1,8 +1,12 @@
 from fastapi import FastAPI
 
+import inference
 from api.models.schemas import PredictRequest, PredictResponse
 
 app = FastAPI()
+
+classifier_model = inference.load_classifier_model()
+sentence_transformer_model = inference.load_sentence_transformer_model()
 
 
 @app.get("/")
@@ -17,5 +21,6 @@ def health_check() -> dict[str, str]:
 
 @app.post("/predict")
 def predict(request: PredictRequest) -> PredictResponse:
-    prediction_result = "positive"
+    embedding = inference.transform(sentence_transformer_model, request.text)
+    prediction_result = inference.predict(classifier_model, embedding)
     return PredictResponse(prediction=prediction_result)
