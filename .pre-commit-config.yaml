@@ -5,3 +5,12 @@ repos:
         - id: ruff-check  # Linter
           args: [--fix]  # Ensure fixes are applied
         - id: ruff-format  # Formatter
+   - repo: https://github.com/pre-commit/mirrors-mypy
+     rev: v1.9.0
+     hooks:
+        - id: mypy
+          additional_dependencies: [
+            "types-requests",
+            "types-PyYAML",
+            "tokenize-rt"
+          ]
