@@ -1,0 +1,7 @@
+[project]
+name = "mlops-course-homework1"
+version = "0.1.0"
+description = "MLOps course AGH - Laboratory 1 homework"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
