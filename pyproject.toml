@@ -6,10 +6,12 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "clean-text>=0.7.1",
+    "fastapi>=0.135.1",
     "joblib>=1.5.3",
     "scikit-learn>=1.8.0",
     "sentence-transformers>=3.0.0",
     "torch>=2.2.0",
+    "uvicorn>=0.42.0",
 ]
 
 [dependency-groups]
@@ -33,6 +35,8 @@ warn_return_any = true
 warn_unused_configs = true
 disallow_untyped_defs = true
 ignore_missing_imports = true
+explicit_package_bases = true
+namespace_packages = true
 
 [tool.ruff]
 # Exclude a variety of commonly ignored directories.
