@@ -27,16 +27,22 @@ Instead, the focus is on the operational side of Machine Learning (MLOps).
 ## 🏗️ Project Structure
 ```text
 .
-├── data/               # Raw and processed data  
-├── notebooks/          # Jupyter notebooks (experiments)  
-├── src/                # Source code  
-│   ├── data/           # Data processing  
-│   ├── features/       # Feature engineering  
-│   ├── models/         # Training and inference  
-│   └── utils/          # Helper functions  
-├── tests/              # Unit and API tests  
-├── requirements.txt    # Dependencies  
-└── README.md
+├── main.py                   # Main entry point for the ML pipeline
+├── api.py                    # Model serving API (FastAPI)
+├── api/                      # Source code  
+│   └── models/               # API schemas
+├── models/                   # Trained and serialized models
+├── tests/                    # Unit and integration tests (pytest) 
+├── .dockerignore             # Files and folders to be ignored by Docker
+├── .gitignore                # Files and folders to be ignored by Git
+├── .pre-commit-config.yaml   # Hooks for code formatting and linting
+├── inference.py              # Logic for model prediction
+├── Dockerfile                # Docker configuration for the app
+├── docker-compose.yml        # Multi-container orchestration
+├── pyproject.toml            # Project metadata and dependencies (uv)
+├── uv.lock                   # Locked dependency versions (uv)
+├── pytest.ini                # Pytest configuration and markers
+└── README.m                  # Project documentation
 ```
 ---
 
