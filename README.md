@@ -25,6 +25,7 @@ Instead, the focus is on the operational side of Machine Learning (MLOps).
 
 ---
 ## 🏗️ Project Structure
+```text
 .
 ├── data/               # Raw and processed data  
 ├── notebooks/          # Jupyter notebooks (experiments)  
@@ -35,7 +36,8 @@ Instead, the focus is on the operational side of Machine Learning (MLOps).
 │   └── utils/          # Helper functions  
 ├── tests/              # Unit and API tests  
 ├── requirements.txt    # Dependencies  
-└── README.md  
+└── README.md
+```
 ---
 
 ## ⚙️ Requirements
@@ -197,7 +199,7 @@ docker compose down
 ### API & Serving
 - **FastAPI** – REST API for model inference
 - **Uvicorn** – ASGI server
-- 
+ 
 ### Machine Learning
 - **scikit-learn** – model inference
 - **PyTorch** – backend for embeddings
