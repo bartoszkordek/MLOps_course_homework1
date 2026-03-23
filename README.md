@@ -42,7 +42,7 @@ Instead, the focus is on the operational side of Machine Learning (MLOps).
 ├── pyproject.toml            # Project metadata and dependencies (uv)
 ├── uv.lock                   # Locked dependency versions (uv)
 ├── pytest.ini                # Pytest configuration and markers
-└── README.m                  # Project documentation
+└── README.md                  # Project documentation
 ```
 ---
 
